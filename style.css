@@ -1,29 +1,39 @@
-*{
-    margin: 5px;
+
+
+body{
+    margin-left: 0px;
+    background-color: rgb(119, 121, 116);
 }
 
 .refs{
+    margin: 2%;
     display: flex;
     justify-content: space-around;
 
     font-size: clamp(2vh, 2vw, 4vh);
 
-    >div>a{
-        color: black;
-        text-decoration: none;
+    >div{
+        >a{
+            color: rgb(12, 12, 12);
+            text-decoration: none;
+        }
     }
-
 }
 
 #intro{
+    width: 100%;
+    padding: 1%;
+
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    background-color: rgb(146, 151, 135);
 
     >img{
         max-width: 50vh;
         width: 50%;
         border-radius: 50%;
+        border: 5px rgb(61, 61, 61) groove;
     }
 
 
@@ -32,6 +42,7 @@
 }
 
 #Apresentacao{
+    padding: 5%;
 
     span{
         font-size: clamp(5vh, 3vw, 10vh);
@@ -43,13 +54,17 @@
 }
 
 #Trabalhos{
+    padding: 2vh;
+    background-color: rgb(167, 167, 144);
     font-size: clamp(2vh, 2vw, 4vh);
 }
 
 #redes{
+    padding: 5%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-content: center;
+    justify-content: space-around;
 
     div{
         a{
@@ -62,4 +77,10 @@
         }
     }
 
+}
+
+footer{
+    background-color: rgb(92, 92, 92);
+    margin: 0%;
+    padding: 1vh;
 }
